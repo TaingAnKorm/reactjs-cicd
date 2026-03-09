@@ -115,7 +115,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git add reactjs-helm/values.yaml
-          git commit -m "ci: release version $TAG to gitops"
+          git commit -m "release version $TAG"
           git push https://${{ secrets.GIT_TOKEN }}@github.com/${{ env.GITOPS_REPO }}.git
 
       - name: Clean up
